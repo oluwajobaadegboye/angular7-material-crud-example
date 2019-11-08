@@ -30,7 +30,7 @@ export class ProductAddComponent implements OnInit {
     this.isLoadingResults = true;
     this.api.addProduct(form)
       .subscribe(res => {
-          let id = res['_id'];
+          let id = res['id'];
           this.isLoadingResults = false;
           this.router.navigate(['/product-details', id]);
         }, (err) => {

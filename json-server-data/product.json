@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "prod_name": "Product 1 ",
+      "prod_desc": "Product 1 Description",
+      "prod_price": 23,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "prod_name": "Product 2 ",
+      "prod_desc": "Product 3 Description",
+      "prod_price": 25
+    },
+    {
+      "id": 3,
+      "prod_name": "Product 2 ",
+      "prod_desc": "Product 3 Description",
+      "prod_price": 33
+    },
+    {
+      "prod_name": "Product 4",
+      "prod_desc": "Product 4 Description",
+      "prod_price": "344",
+      "id": 4
+    }
+  ]
+}

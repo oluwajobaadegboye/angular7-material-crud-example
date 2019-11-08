@@ -18,6 +18,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getProducts (): Observable<Product[]> {
+    console.log(apiUrl)
     return this.http.get<Product[]>(apiUrl)
       .pipe(
         tap(products => console.log('Fetch products')),
@@ -35,7 +36,7 @@ export class ApiService {
 
   addProduct (product): Observable<Product> {
     return this.http.post<Product>(apiUrl, product, httpOptions).pipe(
-      tap((product: Product) => console.log(`added product w/ id=${product._id}`)),
+      tap((product: Product) => console.log(`added product w/ id=${product.id}`)),
       catchError(this.handleError<Product>('addProduct'))
     );
   }

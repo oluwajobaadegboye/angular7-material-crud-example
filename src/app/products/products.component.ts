@@ -13,10 +13,10 @@ export class ProductsComponent implements OnInit {
   data: Product[] = [];
   isLoadingResults = true;
 
-  constructor(private api: ApiService) { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    this.api.getProducts()
+    this.apiService.getProducts()
       .subscribe(res => {
         this.data = res;
         console.log(this.data);
